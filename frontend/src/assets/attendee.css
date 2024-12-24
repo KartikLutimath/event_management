@@ -1,0 +1,178 @@
+/* General Styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    min-height: 100%;
+    overflow: auto;
+}
+
+/* Header Styling */
+h1,
+h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+/* Attendee Manager Styles */
+.attendee-manager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    overflow: auto;background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Form and Input Styles */
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 25px;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 40vw;
+}
+
+input[type="text"]:focus {
+    border-color: #315b8b;
+    outline: none;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+/* Button Styles */
+button {
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff5722;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled {
+    background-color: #e64a19;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #e64a19;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Attendee List */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    height: 180px;
+    overflow: hidden;
+}
+
+/* Select Dropdowns */
+select {
+    margin-top: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+select:focus {
+    border-color: #4a90e2;
+    outline: none;
+    box-shadow: 0 0 4px rgba(74, 144, 226, 0.5);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Loading Text */
+p {
+    font-size: 1rem;
+    color: #34495e;
+}
+
+/* Attendee Item Buttons */
+li button {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .attendee-manager {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    select {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li button {
+        margin-left: 0;
+        margin-top: 5px;
+    }
+}

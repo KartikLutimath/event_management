@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    height: 100%;
+    /* Ensure body takes full height */
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+h2,
+h1 {
+    color: #333;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 3rem;
+    /* Increased font size for h2 */
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    /* Slight spacing for a modern feel */
+}
+
+h1 {
+    font-size: 4rem;
+    /* Increased font size for h1 */
+    letter-spacing: 2px;
+    /* Spacing between letters for emphasis */
+}
+
+/* Home Page Styles */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    /* Full viewport height */
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    /* Gradient background */
+    padding: 20px;
+    animation: fadeIn 1.5s ease-out;
+    text-align: center;
+    /* Center all text */
+}
+
+.event-manager-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.home-header h1 {
+    font-size: 4.5rem;
+    /* Further increased font size */
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    /* Subtle text shadow */
+    transition: transform 0.3s ease;
+}
+
+.home-header h1:hover {
+    transform: scale(1.1);
+    /* Slight scale effect on hover */
+}
+
+/* Home Content */
+.home-content {
+    color: #fff;
+}
+
+.home-content h2 {
+    font-size: 3.5rem;
+    /* Increased font size for h2 */
+    color: #fff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    /* More spacing between letters */
+    animation: fadeIn 1s ease-out;
+}
+
+.home-content p {
+    font-size: 2rem;
+    /* Increased font size for paragraph */
+    color: #f0f0f0;
+    margin-bottom: 40px;
+    animation: fadeIn 1.2s ease-out;
+}
+
+.home-links {
+    display: flex;
+    gap: 30px;
+    /* Increased gap between links */
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.home-link {
+    text-decoration: none;
+    padding: 20px 40px;
+    /* Increased padding for larger buttons */
+    font-size: 1.5rem;
+    /* Increased font size for links */
+    background-color: #ff5722;
+    /* Vibrant button color */
+    color: white;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-link:hover {
+    background-color: #e64a19;
+    transform: translateY(-5px);
+    /* Slight lift effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

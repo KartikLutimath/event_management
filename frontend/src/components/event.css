@@ -1,0 +1,56 @@
+/* Attendee Manager Styles */
+.attendee-manager {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.attendee-manager h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.attendee-manager input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 250px;
+}
+
+.attendee-manager button {
+  padding: 8px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.attendee-manager button:disabled {
+  background-color: #ccc;
+}
+
+.attendee-manager ul {
+  list-style: none;
+  padding: 0;
+}
+
+.attendee-manager li {
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attendee-manager select {
+  padding: 6px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.attendee-manager .attendee-buttons button {
+  margin-left: 10px;
+}
